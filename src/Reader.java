@@ -46,12 +46,12 @@ public class Reader {
     }
     public String productName(){
         System.out.println("Qual o nome do Produto");
-        String productName = scanner.nextLine();
+        String productName = scanner.next();
         return productName;
     }
     public String productPrice(){
             System.out.println("Qual o preço");
-            String productPrice = scanner.nextLine();
+            String productPrice = scanner.next();
             return productPrice;
 
     }

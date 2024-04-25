@@ -10,8 +10,8 @@ public class Main {
         int iC = 0;
         Reader reader = new Reader();
         Cliente cliente = new Cliente(c);
-        Venda venda = new Venda(c, p);
         Produto produto = new Produto(p);
+        Venda venda = new Venda(c, p);
         Boolean m = true;
             while(m = true)
             {
@@ -39,19 +39,16 @@ public class Main {
                         break;
 
                     case (2):
-                        reader.productName();
-                        String nick = reader.productName();
-                        produto.cProduto(iP, 0, nick);
-                        reader.productPrice();
-                        String preco = reader.productPrice();
-                        produto.cProduto(iP, 1, preco);
+
+                        produto.setcProduto(iP, 0, reader.productName());
+                        produto.setcProduto(iP, 1, reader.productPrice());
                         iP = iP + 1;
-                        p = p + 1;
+
                         break;
 
 
                     case (3):
-                        //produto.listProduct(iP);
+                        produto.listProduto();
                         break;
 
                     case(4):
